@@ -32,11 +32,15 @@ $section3: url(../images/pic03.jpg);
     font-family: $interExtraBold;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     background: $background no-repeat center/cover fixed;
     height: 100vh;
     font-family: $MerriweatherLight;
-    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
