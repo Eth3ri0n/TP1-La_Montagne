@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Merriweather:wght@300&display=swap');
+
+$color1: black;
+$color2: white;
+
+// Fonts
+$interExtraBold: 'Inter', sans-serif;
+$MerriweatherLight: 'Merriweather', serif;
+
+// Image
+$background: url(../images/bg.jpg);
+$section1: url(../images/pic01.jpg);
+$section2: url(../images/pic02.jpg);
+$section3: url(../images/pic03.jpg);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: $interExtraBold;
+}
+
+body {
+    background: $background no-repeat center/cover fixed;
+    height: 100vh;
+    font-family: $MerriweatherLight;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    font-family: $interExtraBold;
+}
+
+main {
+    background-color: $color2;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.date {
+    font-family: $MerriweatherLight;
+    font-size: 0.9rem;
+}
+
+p {
+    font-family: $MerriweatherLight;
+    line-height: 30px;
+}
+
+footer {
+    margin: 20px auto;
+    padding: 40px 20px;
+    background-color: $color2;
+    max-width: 80%;
+}

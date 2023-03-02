@@ -1,0 +1,46 @@
+.nav__container {
+  @include between;
+  background-color: rgba(255, 255, 255, 0.258);
+  color: $color2;
+  max-width: 80%;
+  margin: 0 auto;
+
+  nav {
+    width: 50%;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+    
+    ul {
+      @include between;
+      font-family: $interExtraBold;
+      text-transform: uppercase;
+      li {
+        padding: 20px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        width: 100%;
+
+        &:first-child {
+          background-color: $color2;
+          color: $color1;
+        }
+      }
+    }
+  }
+}
+
+.medias__container {
+  width: 15%;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+  ul {
+    @include between;
+    padding: 20px;
+    i {
+      color: $color2;
+    }
+  }
+}

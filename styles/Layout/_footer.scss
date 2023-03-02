@@ -1,0 +1,70 @@
+.form__address {
+  @include between;
+
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+
+  .more {
+    width: 50%;
+    border-left: 1px solid black;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  form {
+    padding: 20px 40px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: gray;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    input {
+      margin-bottom: 20px;
+      height: 35px;
+      width: 100%;
+      border-radius: 2px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      -o-border-radius: 2px;
+      border: 1px solid gray;
+    }
+
+    textarea {
+      resize: none;
+      width: 100%;
+    }
+  }
+  .infos {
+    padding: 20px 40px;
+
+    div {
+      padding: 40px;
+      border-bottom: 1px solid gray;
+      width: 100%;
+    }
+    span {
+      margin-right: 20px;
+    }
+    a {
+      border: 1px solid gray;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      i {
+        padding: 20px 10px;
+        color: $color1;
+      }
+    }
+  }
+}

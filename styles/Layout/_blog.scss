@@ -1,0 +1,43 @@
+.blog {
+    @include center;
+
+    @media screen and (max-width: 700px) {
+        display: block;
+    }
+    
+    .april__img {
+        width: 50%;
+        text-align: center;
+        padding: 40px;
+        border: 1px solid gray;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            border: none;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+
+        .img {
+            height: 200px;
+            width: 80%;
+            margin: 20px auto;
+
+        }
+        .img__one {
+            background: url(../../images/pic02.jpg) center/cover;
+        }
+        .img__two {
+            background: url(../../images/pic03.jpg) center/cover;
+        }
+    }
+    p {
+        text-align: justify;
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        word-spacing: -2px;
+    }
+}
